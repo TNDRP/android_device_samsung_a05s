@@ -78,7 +78,7 @@ BOARD_MKBOOTIMG_ARGS:= \
 --ramdisk_offset=0x02000000 \
 --tags_offset=0x01e00000 \
 --header_version=$(BOARD_BOOTIMG_HEADER_VERSION) \
---dtb=$(TARGET_PREBUILT_DTB)
+--dtb=$(DEVICE_PATH)/prebuilt/dtb.img
 
 # Sourcecode
 BOARD_KERNEL_IMAGE_NAME := Image
