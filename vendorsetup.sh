@@ -18,7 +18,7 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
-FDEVICE="messi"
+FDEVICE="a05s"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -49,7 +49,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 # Device Info
     export FOX_ARCH=arm64
     export FOX_VARIANT="12.1"
-    export TARGET_DEVICE_ALT="RMX3521,RE54E2L1"
+    export TARGET_DEVICE_ALT="a05s"
   
 # Funtions
     export FOX_REPLACE_BUSYBOX_PS=1
