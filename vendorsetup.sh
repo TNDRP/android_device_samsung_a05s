@@ -83,6 +83,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_NO_SPLASH_CHANGE=1
     export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
     export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
+    export OF_DEFAULT_KEYMASTER_VERSION=40
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
