@@ -74,15 +74,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 # A/B-Related
     export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
     export FOX_VIRTUAL_AB_DEVICE=1
-    export OF_VANILLA_BUILD=0
+    export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
   
 # Other Patches
-    export OF_NO_RELOAD_AFTER_DECRYPTION=1
-    export OF_FBE_METADATA_MOUNT_IGNORE=1
-    export OF_PATCH_AVB20=1
-    export OF_NO_SPLASH_CHANGE=1
-    export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
-    export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
+# Use latest "magiskboot" binaries as this is a relatively new device
+    export FOX_USE_UPDATED_MAGISKBOOT=1
+  # Security (Disables MTP & ADB during password prompt)
+    export OF_ADVANCED_SECURITY=1
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
