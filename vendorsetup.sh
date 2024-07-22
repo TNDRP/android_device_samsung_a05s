@@ -71,9 +71,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_USE_GREEN_LED=0
     export OF_SCREEN_H=2400
 
-# A/B-Related
-    export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
-    export FOX_VIRTUAL_AB_DEVICE=1
+# Misc
     export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
     
 # Keymaster
