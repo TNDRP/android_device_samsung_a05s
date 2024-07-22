@@ -159,7 +159,9 @@ TW_INCLUDE_LIBRESETPROP := true
 TW_NO_LEGACY_PROPS := true
 TW_USE_NEW_MINADBD := true
 TW_MAX_BRIGHTNESS := 200
-TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko goodix_ts.ko hx9031as.ko hx83112f.ko icnl9922c.ko ns.ko pt_ts.ko raydium_ts.ko"
+TW_LOAD_VENDOR_BOOT_MODULES := true
+TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 TW_DEVICE_VERSION := MrFluffyOven_2_Crypton
 
 # Logging
