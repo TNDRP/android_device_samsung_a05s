@@ -86,7 +86,6 @@ usb_f_ss_mon_gadget.ko
 ucsi_glink.ko
 pd_dbg_info.ko
 rt-regmap.ko
-tcpc_class.ko
 tcpc_rt1711h.ko
 aw35615_whole.ko
 rt_pd_manager.ko
@@ -190,7 +189,6 @@ stm_p_ost.ko
 stm_console.ko
 stm_ftrace.ko
 snd-usb-audio-qmi.ko
-cfg80211.ko
 qrtr-smd.ko
 tz_log_dlkm.ko
 qcedev-mod_dlkm.ko
@@ -228,16 +226,12 @@ wcd937x_slave_dlkm.ko
 btpower.ko
 bt_fm_slim.ko
 radio-i2c-rtc6226-qca.ko
-camera.ko
 gsim.ko
-ipam.ko
 ipanetm.ko
 rndisipam.ko
 ipa_clientsm.ko
-rmnet_core.ko
 rmnet_ctl.ko
 rmnet_wlan.ko
-msm_drm.ko
 msm-mmrm.ko
 mmrm_test_module.ko
 tz_log_dlkm.ko
@@ -262,15 +256,12 @@ pt_ts.ko
 pt_i2c.ko
 pt_device_access.ko
 raydium_ts.ko
-msm_video.ko
 qca_cld3_wlan.ko
 wlan_firmware_service.ko
 cnss_nl.ko
 cnss_prealloc.ko
 cnss_utils.ko
 icnss2.ko
-msm_kgsl.ko
-
 )
 
 # Directory where modules are located
