@@ -5,12 +5,8 @@ modules=(
 fsa4480-i2c.ko
 goodixfp.ko
 chipone_fp.ko
-icc-test.ko
-tz_log_dlkm.ko
 nt36xxx-i2c.ko
-tp_info.ko
 lct_tp.ko
-ilitek.ko
 icnl9922c.ko
 hx83112f.ko
 hx9031as.ko
@@ -19,9 +15,7 @@ atmel_mxt_ts.ko
 synaptics_tcm_ts.ko
 pt_ts.ko
 pt_i2c.ko
-pt_device_access.ko
 raydium_ts.ko
-icnss2.ko
 i2c-msm-geni.ko
 )
 
