@@ -76,6 +76,8 @@ on post-fs
 on post-fs-data
     mkdir /data/vendor/keymaster 0775 root root
     mkdir /data/vendor/gatekeeper 0770 root root
+    exec - root -- /vendor/bin/init.insmod.sh
+    exec - root -- /vendor/bin/init.insmod.recovery.sh
 
 service vendor.health-recovery /vendor/bin/hw/android.hardware.health-service.qti_recovery
     class hal
@@ -105,8 +107,3 @@ service vendor.keymint-default /vendor/bin/hw/android.hardware.security.keymint-
     user root
     group root drmrpc
     seclabel u:r:recovery:s0
-
-# Module Loading
-on post-fs-data
-    exec - root -- /vendor/bin/init.insmod.sh
-    exec - root -- /vendor/bin/init.insmod.recovery.sh
