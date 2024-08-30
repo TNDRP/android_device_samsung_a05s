@@ -163,7 +163,7 @@ TW_USE_NEW_MINADBD := true
 TW_MAX_BRIGHTNESS := 200
 TW_LOAD_VENDOR_MODULES := true
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
-TW_DEVICE_VERSION := MrFluffyOven_4_Crypton-staging
+TW_DEVICE_VERSION := MrFluffyOven_4_Crypton
 
 # Logging
 TARGET_USES_LOGD := true
