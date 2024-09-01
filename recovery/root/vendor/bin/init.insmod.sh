@@ -2,10 +2,6 @@
 
 # List of kernel modules
 modules=(
-fsa4480-i2c.ko
-goodixfp.ko
-chipone_fp.ko
-nt36xxx-i2c.ko
 lct_tp.ko
 icnl9922c.ko
 hx83112f.ko
@@ -14,9 +10,7 @@ goodix_ts.ko
 atmel_mxt_ts.ko
 synaptics_tcm_ts.ko
 pt_ts.ko
-pt_i2c.ko
 raydium_ts.ko
-i2c-msm-geni.ko
 )
 
 # Directory where modules are located
