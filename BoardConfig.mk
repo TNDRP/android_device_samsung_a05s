@@ -159,7 +159,7 @@ TW_INCLUDE_LIBRESETPROP := true
 TW_NO_LEGACY_PROPS := true
 TW_USE_NEW_MINADBD := true
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
-TW_DEVICE_VERSION := MrFluffyOven_1_U3
+TW_DEVICE_VERSION := MrFluffyOven_5_U3
 
 # Logging
 TARGET_USES_LOGD := true
