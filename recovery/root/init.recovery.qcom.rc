@@ -28,8 +28,8 @@ import /init.recovery.qcom_decrypt.rc
 import /init.recovery.display.rc
 
 on early-init
-    start vendor.modprobe
     
+
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     export LD_LIBRARY_PATH /system/lib64:/system/lib64/hw:/vendor/lib64:/vendor/lib64/hw
@@ -41,6 +41,7 @@ on init
     start keymaster-4-0 
     start vendor.gatekeeper-1-0
     start vendor.keymint-default
+    start vendor.modprobe
 
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
@@ -110,6 +111,5 @@ service vendor.modprobe /vendor/bin/vendor_modprobe.sh
     group root root
     disabled
     stdio_to_kmsg
-    seclabel u:r:vendor_modprobe:s0
     oneshot
     seclabel u:r:recovery:s0
