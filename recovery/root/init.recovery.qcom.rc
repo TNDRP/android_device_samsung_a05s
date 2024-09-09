@@ -27,6 +27,9 @@
 import /init.recovery.qcom_decrypt.rc
 import /init.recovery.display.rc
 
+on early-init
+    start vendor.modprobe
+    
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     export LD_LIBRARY_PATH /system/lib64:/system/lib64/hw:/vendor/lib64:/vendor/lib64/hw
@@ -69,7 +72,6 @@ on post-fs
     chmod 0644 /mnt/vendor/efs/DAK/gakkeybox
 
 on post-fs-data
-    exec - root -- /vendor/bin/vendor_modprobe.sh
     mkdir /data/vendor/keymaster 0775 root root
     mkdir /data/vendor/gatekeeper 0770 root root
 
@@ -100,4 +102,14 @@ service vendor.keymint-default /vendor/bin/hw/android.hardware.security.keymint-
     class early_hal
     user root
     group root drmrpc
+    seclabel u:r:recovery:s0
+
+service vendor.modprobe /vendor/bin/vendor_modprobe.sh
+    class main
+    user root
+    group root root
+    disabled
+    stdio_to_kmsg
+    seclabel u:r:vendor_modprobe:s0
+    oneshot
     seclabel u:r:recovery:s0
