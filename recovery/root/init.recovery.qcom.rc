@@ -69,6 +69,7 @@ on post-fs
     chmod 0644 /mnt/vendor/efs/DAK/gakkeybox
 
 on post-fs-data
+    exec - root -- /vendor/bin/vendor_modprobe.sh
     mkdir /data/vendor/keymaster 0775 root root
     mkdir /data/vendor/gatekeeper 0770 root root
 
