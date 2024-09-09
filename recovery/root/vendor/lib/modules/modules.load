@@ -1,9 +1,3 @@
 icnl9922c.ko
 hx83112f.ko
 goodix_ts.ko
-atmel_mxt_ts.ko
-synaptics_tcm_ts.ko
-pt_ts.ko
-pt_i2c.ko
-pt_device_access.ko
-raydium_ts.ko
