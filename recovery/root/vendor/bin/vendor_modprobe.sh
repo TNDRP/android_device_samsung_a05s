@@ -5,7 +5,7 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #=============================================================================
 
-VENDOR_DIR="/vendor/lib/modules"
+VENDOR_DIR="/vendor/lib/modules/1.1"
 VENDOR_DLKM_DIR="/vendor_dlkm/lib/modules"
 
 MODPROBE="/vendor/bin/modprobe"
