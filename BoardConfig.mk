@@ -162,7 +162,7 @@ TW_PREPARE_DATA_MEDIA_EARLY := true
 TW_FORCE_KEYMASTER_VER := true
 
 # VERSION
-TW_DEVICE_VERSION := MrFluffyOven_5_U4
+TW_DEVICE_VERSION := MrFluffyOven_5_U4_G2-B1
 
 
 # USB
@@ -184,4 +184,7 @@ TW_INCLUDE_RESETPROP := true
 TW_NO_LEGACY_PROPS := true
 
 # Modules
-#TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/prebuilt/modules)\")
+TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/prebuilt/modules)\")
+
+# Fix for copying *.ko
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
