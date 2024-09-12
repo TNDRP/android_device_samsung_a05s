@@ -143,7 +143,9 @@ BOARD_ROOT_EXTRA_FOLDERS := \
         second_stage_resources \
         spu \
         system_ext \
-        vendor_dlkm
+        vendor_dlkm \
+        keyrefuge \
+        keydata
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
