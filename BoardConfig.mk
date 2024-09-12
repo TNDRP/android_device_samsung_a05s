@@ -145,7 +145,8 @@ BOARD_ROOT_EXTRA_FOLDERS := \
         system_ext \
         vendor_dlkm \
         keyrefuge \
-        keydata
+        keydata \
+        vendor
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
