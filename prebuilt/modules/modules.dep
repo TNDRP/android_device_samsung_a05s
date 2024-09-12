@@ -1,0 +1,15 @@
+/vendor/lib/modules/1.1/synaptics_tcm_ts.ko: /vendor/lib/modules/1.1/panel_event_notifier.ko
+/vendor/lib/modules/1.1/pt_device_access.ko: /vendor/lib/modules/1.1/pt_ts.ko /vendor/lib/modules/1.1/panel_event_notifier.ko
+/vendor/lib/modules/1.1/tp_info.ko:
+/vendor/lib/modules/1.1/atmel_mxt_ts.ko: /vendor/lib/modules/1.1/panel_event_notifier.ko
+/vendor/lib/modules/1.1/panel_event_notifier.ko:
+/vendor/lib/modules/1.1/nt36xxx-i2c.ko: /vendor/lib/modules/1.1/panel_event_notifier.ko
+/vendor/lib/modules/1.1/lct_tp.ko:
+/vendor/lib/modules/1.1/goodix_ts.ko: /vendor/lib/modules/1.1/panel_event_notifier.ko
+/vendor/lib/modules/1.1/goodixfp.ko: /vendor/lib/modules/1.1/panel_event_notifier.ko
+/vendor/lib/modules/1.1/icnl9922c.ko: /vendor/lib/modules/1.1/lct_tp.ko /vendor/lib/modules/1.1/cmd.ko /vendor/lib/modules/1.1/tp_info.ko /vendor/lib/modules/1.1/msm_drm.ko /vendor/lib/modules/1.1/qcom_va_minidump.ko /vendor/lib/modules/1.1/panel_event_notifier.ko
+/vendor/lib/modules/1.1/pt_ts.ko: /vendor/lib/modules/1.1/panel_event_notifier.ko
+/vendor/lib/modules/1.1/hx9031as.ko: /vendor/lib/modules/1.1/sx933x.ko /vendor/lib//1.1/sensors_class.ko
+/vendor/lib/modules/1.1/sensors_class.ko:
+/vendor/lib/modules/1.1/cmd.ko:
+/vendor/lib/modules/1.1/msm_drm.ko: /vendor/lib/modules/1.1/qcom_va_minidump.ko /vendor/lib/modules/1.1/panel_event_notifier.ko
