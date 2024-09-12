@@ -120,11 +120,30 @@ BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
+# VENDOR_DLKM
+BOARD_USES_VENDOR_DLKMIMAGE := true
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+
 # Super/Dynamic
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system system system vendor system_ext vendor_dlkm product odm
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
+
+# System as root
+BOARD_ROOT_EXTRA_FOLDERS := \
+        cache \
+        carrier \
+        efs \
+        linkerconfig \
+        metadata \
+        optics \
+        postinstall \
+        prism \
+        second_stage_resources \
+        spu \
+        system_ext \
+        vendor_dlkm
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
