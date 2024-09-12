@@ -4,9 +4,7 @@ atmel_mxt_ts.ko
 cmd.ko
 lct_tp.ko
 msm_drm.ko
-nt36xxx-i2c.ko
 panel_event_notifier.ko
-pt_device_access.ko
 pt.ts.ko
 qcom_va_minidump.ko
 raydium_ts.ko
