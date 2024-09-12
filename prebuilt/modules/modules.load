@@ -5,7 +5,6 @@ cmd.ko
 lct_tp.ko
 msm_drm.ko
 panel_event_notifier.ko
-pt.ts.ko
 qcom_va_minidump.ko
 raydium_ts.ko
 sensors_class.ko
