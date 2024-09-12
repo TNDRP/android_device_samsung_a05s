@@ -29,5 +29,3 @@ alias i2c:gtx8_i2c goodix_ts
 alias of:N*T*Cchipone-tddi icnl9922c
 alias of:N*T*Cchipone-tddiC* icnl9922c
 alias i2c:raydium_ts raydium_ts
-alias sar driver hx9031as
-alias i2c:hx9031as hx9031as
