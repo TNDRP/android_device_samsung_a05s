@@ -78,7 +78,7 @@ BOARD_MKBOOTIMG_ARGS:= \
 --ramdisk_offset=0x02000000 \
 --tags_offset=0x01e00000 \
 --header_version=$(BOARD_BOOTIMG_HEADER_VERSION) \
---dtb=$(DEVICE_PATH)/prebuilt/dtb.img
+--dtb=$(TARGET_PREBUILT_DTB)
 
 # Sourcecode
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -112,6 +112,8 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     sec_efs \
     firmware \
     metadata \
+    keydata \
+    keyrefuge
 
 # Recovery
 RECOVERY_SDCARD_ON_DATA := true
@@ -132,10 +134,10 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
-PLATFORM_VERSION := 16.1.0
+PLATFORM_VERSION := 14
 
 # Encryption & Misc
-#TW_INCLUDE_CRYPTO := false
+#TW_INCLUDE_CRYPTO := true
 #TW_INCLUDE_CRYPTO_FBE := false
 TW_FORCE_KEYMASTER_VER := true
 BOARD_USES_METADATA_PARTITION := true
@@ -158,8 +160,10 @@ TW_PREPARE_DATA_MEDIA_EARLY := true
 TW_INCLUDE_LIBRESETPROP := true
 TW_NO_LEGACY_PROPS := true
 TW_USE_NEW_MINADBD := true
+TW_MAX_BRIGHTNESS := 200
+TW_LOAD_VENDOR_MODULES := true
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
-TW_DEVICE_VERSION := MrFluffyOven_5_U3
+TW_DEVICE_VERSION := MrFluffyOven_14_S7
 
 # Logging
 TARGET_USES_LOGD := true
