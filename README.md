@@ -1,4 +1,5 @@
-# Android device tree for samsung SM-A057F A057FXX[S5]CXH9 (a05s)
+# Android device tree for samsung SM-A057F A057FXX[S7]CXJ2 (a05s)
+
 
 # How-to compile it:
 
