@@ -1,4 +1,4 @@
-# Android device tree for samsung SM-A057F A057FXX[S7]CXJ2 (a05s)
+# Android device tree for samsung SM-A057F (a05s)
 
 
 # How-to compile it:
@@ -8,7 +8,7 @@
 ## Sync
     repo sync
 ## Clone galaxy a05s TWRP tree
-    git clone https://github.com/galaxy-a05s/android_device_samsung_a05s.git -b twrp-14-s7 device/samsung/a05s
+    git clone https://github.com/galaxy-a05s/android_device_samsung_a05s.git -b twrp-14-u3 device/samsung/a05s
 ## Prepare
     export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_a05s-eng
 ## Repopick Patches
